@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const FriendWrapper = styled.div`
     margin: auto;
@@ -30,12 +31,13 @@ const FriendMail = styled.p`
 
 
 const FriendCard = props => {
-    console.log(props);
     return (
         <FriendWrapper>
+            <Link to={`/${props.friends.id}`} key={props.friends.id}>
             <FriendName>Name: {props.friends.name}</FriendName>
             <FriendAge>Age: {props.friends.age}</FriendAge>
             <FriendMail>e-mail: {props.friends.email}</FriendMail>
+            </Link>
         </FriendWrapper>
     )
 }
