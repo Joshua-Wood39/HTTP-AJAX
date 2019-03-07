@@ -1,0 +1,11 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.fa-searchengin {
+    font-size: 1.6rem;
+    margin-left: 10px;
+    margin-right: 2px;
+}
